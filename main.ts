@@ -5,34 +5,34 @@ d = 20;
 
 input.onButtonPressed(Button.A, function () {
     if (d == 20) {
-        roll = Math.round(Math.random() * 19) + 1
+        roll = randint(1, 20)
         radio.sendString(">" + roll + "/20")
         if (roll == 20) {
             radio.sendNumber(2000);
         }
         basic.showString("" + roll + "/20")
     } else if (d == 12) {
-        roll = Math.round(Math.random() * 11) + 1
+        roll = randint(1, 12)
         radio.sendString(">" + roll + "/12");
         basic.showString("" + roll + "/12");
     } else if (d == 10) {
-        roll = Math.round(Math.random() * 9) + 1
+        roll = randint(1, 10)
         radio.sendString(">" + roll + "/10");
         basic.showString("" + roll + "/10");
     } else if (d == 8) {
-        roll = Math.round(Math.random() * 7) + 1
+        roll = randint(1, 8)
         radio.sendString(">" + roll + "/8");
         basic.showString("" + roll + "/8");
     } else if (d == 6) {
-        roll = Math.round(Math.random() * 5) + 1
+        roll = randint(1, 6)
         radio.sendString(">" + roll + "/6");
         basic.showString("" + roll + "/6");
     } else if (d == 4) {
-        roll = Math.round(Math.random() * 3) + 1
+        roll = randint(1,4)
         radio.sendString(">" + roll + "/4");
         basic.showString("" + roll + "/4");
     } else if (d == 100) {
-        roll = Math.round(Math.random() * 99) + 1
+        roll = randint(1,100)
         radio.sendString("" + roll + "/100");
         basic.showString("" + roll + "/100");
     }
